@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="classwork17c.css">
+    <link rel="stylesheet" href="to_do_list3.css">
 </head>
 <body>
     <center><h1 class="h1h1">Tasks for this day</h1>
@@ -16,13 +16,30 @@
 
     </form>
     <p>Інструкція: треба написати одну задачу і натиснути кнопку "готово", цю операцію повторювати поки не заповниш весь список, а коли заповниш натисни кнопку "показати результат"</p></center>
+    <p></p><p></p><p></p>
+    <form id="del_task">
+        <input type="text" id="num_task">
+        <button class="but" onclick="del_task()"><p class="text1">видалити</p></button>
+        <button class="but" onclick="print_all()">показати результат</button>
+        
+
+
+    </form>
+    <p></p><p></p><p></p>
+    <form id="reg_task">
+        <input type="text" id="num_task1">
+        <input type="text" id="for_what">
+        <button class="but" onclick="reg_task()"><p class="text1">редагувати</p></button>
+        <button class="but" onclick="print_all()">показати результат</button>
+
+
+    </form>
     
-    <p id="result"></p>
 
 
 
 
-    <script src="classwork17.js"></script>
+    <script src="to_do_list2.js"></script>
 
 
 </body>
