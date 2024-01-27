@@ -1,0 +1,33 @@
+.pizza_place{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(147, 215, 159);
+    margin-left: 50px;
+    float: left;
+}
+
+
+.pizza_place :hover{ 
+    background-color: cadetblue;
+    width: 325px;
+    height: 375px;
+
+
+}
+
+
+
+
+
+
+.picture{
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.linkus{
+    size: 35px;
+    color: white;
+}
