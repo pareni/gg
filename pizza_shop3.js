@@ -52,3 +52,14 @@ function adres(){
     para27.innerText = adresa;
     document.body.appendChild(para27);
 };
+
+
+function support(){
+    event.preventDefault();
+    const para263 = document.createElement("h3");
+    para263.id='h3'
+    para263.innerText = "Дякуємо за відгук! Ми станемо краще!";
+    document.body.appendChild(para263);
+
+
+};
