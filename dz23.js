@@ -20,3 +20,6 @@ for (i=1;i<a.length;i++){
 
 
 };
+
+console.log(Math.max(a))
+console.log(Math.min(a))
