@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculate{
+        color: orangered;}
+
+        .knopki{
+            background-color: darkgray;
+        }
+
+        .kn{
+            width: 90px;
+        }
+
+        .kn1{
+            width: 70px;
+            color: red;
+        }
+        .kn2{
+            width: 70px;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="calculate" id="calculate">Тут будуть обчислення</h1>
+    <div id="knopki">
+        <button class="kn" onclick="calk1(1)">1</button>
+        <button class="kn" onclick="calk1(2)">2</button>
+        <button class="kn" onclick="calk1(3)">3</button><p></p>
+        <button class="kn" onclick="calk1(4)">4</button>
+        <button class="kn" onclick="calk1(5)">5</button>
+        <button class="kn" onclick="calk1(6)">6</button><p></p>
+        <button class="kn" onclick="calk1(7)">7</button>
+        <button class="kn" onclick="calk1(8)">8</button>
+        <button class="kn" onclick="calk1(9)">9</button><p></p>
+        <button class="kn1" onclick="calk2('x')">X</button>
+        <button class="kn1" onclick="calk2('/')">/</button>
+        <button class="kn1" onclick="calk2('-')">-</button>
+        <button class="kn1" onclick="calk2('+')">+</button>
+        <button class="kn2" onclick="calk3()">=</button>
+    </div>
+
+    <script>
+        var schet = 0;
+        var a = '';
+        var b = '';
+        var c = '';
+        
+        function calk1(message){
+            if (schet === 0){
+                a += message;
+            }
+            else {
+                b += message;
+            }
+            var messageElement = document.getElementById('calculate');
+            messageElement.textContent = a + c + b;
+        };
+
+        function calk2(message1){
+            c = message1;
+            var messageElement = document.getElementById('calculate');
+            messageElement.textContent = a + c;
+            schet = 1;
+        };
+
+        function calk3() {
+            var result = 0;
+            if (c === 'x') {
+                result = parseInt(a) * parseInt(b);
+            } else if (c === '/') {
+                result = parseInt(a) / parseInt(b);
+            } else if (c === '+') {
+                result = parseInt(a) + parseInt(b);
+            } else if (c === '-') {
+                result = parseInt(a) - parseInt(b);
+            }
+        
+            a = '';
+            b = '';
+            c = '';
+            schet = 0;
+
+            var messageElement = document.getElementById('calculate');
+            messageElement.textContent = result;
+        };
+    </script>
+</body>
+</html>
