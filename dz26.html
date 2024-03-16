@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#click").click(function(){
+            $("#message").text("гарбуз");
+            });
+        });
+        $(document).ready(function(){
+            $("#click1").click(function(){
+            $("#message").text("пс5");
+            });
+        });
+        $(document).ready(function(){
+            $("#click2").click(function(){
+            $("#message").text("помідор");
+            });
+        });
+    </script>
+
+</head>
+
+
+
+<body>
+    <h1>Товари</h1>
+    <button id="click">гарбуз</button>
+    <button id="click1">пс5</button>
+    <button id="click2">помідор</button>
+    <h1>Кошик</h1>
+</body>
+</html>

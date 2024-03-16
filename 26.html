@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Простий сайт з використанням jQuery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#click").click(function(){
+        $("#message").text("Привіт, світ!");
+      });
+    });
+  </script>
+
+
+
+</head>
+<body>
+  <h1>Простий сайт з використанням jQuery</h1>
+  <button id="click">Натисни мене</button>
+  <button>gijdfjigdn</button>
+  <div id="message"></div>
+</body>
+</html>

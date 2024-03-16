@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text1{
+            margin: 0;
+            margin-top: 50px;
+            display: inline-block;
+        }
+        .but{
+            
+            margin: 0;
+            margin-left: 50px;
+            
+            
+            
+
+        }
+        .text2{
+            margin: 0;
+            color: brown;
+            display: inline-block;
+            margin-left: 50px;
+        }
+        
+    </style>
+
+
+</head>
+<center><h1>Завдання</h1>
+<body>
+    <p class="text1">Винисти сміття</p><p class="text2" id="1">    невиконано</p><button  class="but"  id="11">змінити статус</button><p></p>
+    <p class="text1">помити посуд</p><p class="text2" id="2">    невиконано</p><button class="but" id="12">змінити статус</button><p></p>
+    <p class="text1">прибрати дім</p><p class="text2" id="3">    невиконано</p><button class="but" id="13">змінити статус</button><p></p>
+    <p class="text1">приготувати вечерю</p><p class="text2" id="4">    невиконано</p><button class="but" id="14">змінити статус</button><p></p></center>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#11").click(function(){
+                $("#1").text("зроблено");
+      });
+    });
+        $(document).ready(function(){
+            $("#12").click(function(){
+                $("#2").text("зроблено");
+      });
+    });
+    $(document).ready(function(){
+            $("#13").click(function(){
+                $("#3").text("зроблено");
+      });
+    });
+    $(document).ready(function(){
+            $("#14").click(function(){
+                $("#4").text("зроблено");
+      });
+    });
+    </script>
+</body>
+</html>
