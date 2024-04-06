@@ -1,0 +1,51 @@
+.main_headline{
+    background-image: url(images.jpg) ;
+    margin: 0px;
+    width: 1510px;
+    height: 40px;
+}
+.main_headline:hover{
+    height: 60px;
+}
+
+.linkk{
+    font-family:  "Lucida Console", "Courier New", monospace;
+    text-decoration: none;
+    margin-top: 5px;
+    color: azure;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.linkk:hover{
+    margin-top: 10px;
+    color: rgb(248, 1, 1);
+    font-size: 25px;
+}
+
+.luger{
+    display: inline-block;
+    margin-top: 70px;
+    width: 400px;
+    height: 300px;
+}
+
+.pict{
+    width: 60%;
+}
+
+.luger:hover{
+    width: 500px;
+}
+
+.text_name{
+    font-family:'Courier New', Courier, monospace ;
+    text-decoration: none;
+    margin-top: 20px;
+    color: black;
+
+}
+
+.text_name:hover{
+    color: rgb(241, 2, 2);
+}
